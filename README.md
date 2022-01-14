@@ -67,3 +67,17 @@ tearDown()
 
 python unittest/command_line.py -v
 
+# REQUEST 
+
+pip install requests
+
+params al que se le asigna un objeto de tipo dict con pares correspondientes a los parámetros de la consulta que se le añaden a una URL.
+
+header al que se le asigna un objeto de tipo dict con pares correspondientes a campos de encabezados, los cuales sustituirían a los campos de encabezaddos que usa requests por defecto.
+
+data al que se le asigna un objeto que corresponde a los datos que serán enviados al servidor. Los datos son enviados en formato binario.
+
+json al que se le asigna un objeto de tipo dict cuyos datos serán enviados en formato JSON.
+
+auth se utiliza para conexiones que requieren de autenticación simple y al que se le asigna un objeto de tipo tuple con un par de datos (<usuario>, <contraseña>).
+
