@@ -5,6 +5,12 @@ Pythonista 411
 
 https://www.youtube.com/playlist?list=PLeKKNy7-Y2sV7EX04sxSN8rlhqUc0aU5d
 
+# Entorno
+
+python -m venv name
+
+name\Scripts\activate.bat
+
 # Desarrollo dirigido por pruebas (TDD)
 
 https://github.com/PythonistaMX/py411
@@ -32,4 +38,32 @@ https://docs.python.org/3/library/typing.html
 # Pydantic
 
 https://pydantic-docs.helpmanual.io/
+
+# PROOFS
+
+# doctest 
+
+https://docs.python.org/es/3/library/doctest.html
+
+python -m doctest ruta/
+
+# unittest
+
+TestCase es super clase
+
+https://docs.python.org/3/library/exceptions.html
+
+run() 
+
+runTest()
+
+## fixtures
+
+setUp()
+
+tearDown()
+
+## module
+
+python unittest/command_line.py -v
 
