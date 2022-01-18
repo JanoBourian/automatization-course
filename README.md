@@ -81,3 +81,27 @@ json al que se le asigna un objeto de tipo dict cuyos datos serán enviados en f
 
 auth se utiliza para conexiones que requieren de autenticación simple y al que se le asigna un objeto de tipo tuple con un par de datos (<usuario>, <contraseña>).
 
+# Dataclass para hacer objetos tipo Javascript
+
+# La especificación JSON Schema
+
+# openapi
+
+Versión de OpenAPI.
+
+Información (info).
+
+Etiquetas (tags).
+
+Servidores (servers).
+
+Componentes (components).
+
+    - Esquemas (*schemas*)
+
+    - Cuerpos de petición (```requestBodies```)
+
+Rutas (paths).
+
+https://github.com/PythonistaMX/py411/blob/master/10_estructura_de_openapi.ipynb
+
