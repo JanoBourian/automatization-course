@@ -105,3 +105,7 @@ Rutas (paths).
 
 https://github.com/PythonistaMX/py411/blob/master/10_estructura_de_openapi.ipynb
 
+
+# Google Cloud PATHS
+
+https://cloud.google.com/training#learning-paths
