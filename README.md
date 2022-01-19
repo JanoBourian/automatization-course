@@ -5,6 +5,10 @@ Pythonista 411
 
 https://www.youtube.com/playlist?list=PLeKKNy7-Y2sV7EX04sxSN8rlhqUc0aU5d
 
+# Other Playlist 
+
+https://www.youtube.com/watch?v=j-0-k8_EQyI&list=PLeKKNy7-Y2sWVDD4kL4O1nCwv5U2m8Jbh
+
 # Entorno
 
 python -m venv name
