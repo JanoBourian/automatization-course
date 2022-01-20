@@ -113,3 +113,12 @@ https://github.com/PythonistaMX/py411/blob/master/10_estructura_de_openapi.ipynb
 # Google Cloud PATHS
 
 https://cloud.google.com/training#learning-paths
+
+# MOCK SERVER IN POSTMAN
+
+Check class
+
+# INSTALL newman
+
+https://learning.postman.com/docs/running-collections/using-newman-cli/command-line-integration-with-newman/
+
