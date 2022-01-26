@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body style="background-color: gold;">
+    <h1 style="font-size:bold; color:green">Hola, Mundo</h1>
+    <div id="contenedor-1">
+        <div id="contenedor-2">
+            Lorem ipsum dolor <b>sit amet</b>, <i>  consectetur adip </i>
+        </div>
+    </div>
+</body>
+<script>
+    console.log("Hola mundo");
+    let contenedor_1 = document.getElementById("contenedor-1");
+    let elemento_1 = document.getElementById("contenedor-2");
+    let parrafo = document.createElement("p");
+    parrafo.textContent = elemento_1.innerHTML;
+    contenedor_1.appendChild(parrafo);
+</script>
+</html>
