@@ -6,6 +6,6 @@ https://github.com/schoolofcode-me/testing-python-apps
 
 In root path 
 ```
-python -m unittest discover 
+python -m unittest 
 python -m unittest discover
 ```
