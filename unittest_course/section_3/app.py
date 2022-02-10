@@ -1,11 +1,11 @@
-from blog import Blog
-import logging 
-import sqlite3 
-import os 
-
-PATH = os.path.dirname(os.path.abspath(__file__))
-DATABASE = "data.db"
-FILE = PATH + "\\" + DATABASE
+MENU_PROMPT = """
+    1.- To create a blog
+    2.- To list blogs 
+    3.- To read one 
+    4.- To create a post
+    0.- Exit 
+    """
+blogs = dict() 
 
 def menu(): 
     # Show the user the available blogs
@@ -13,28 +13,15 @@ def menu():
     # Do something with that choice 
     # Eventually exit 
     
-    res = print_blogs()
-    print(res)
+    print_blogs()
+    selection = int(input(MENU_PROMPT))
+    
 
 def print_blogs():
-    return Blog.return_all_blogs()
-
-def create_tables():
-    connection = sqlite3.connect(FILE)
-    cursor = connection.cursor() 
-    create_table = "CREATE TABLE IF NOT EXISTS blog(\
-        id INTEGER PRIMARY KEY, title text, author text)"
-    cursor.execute(create_table)
-    connection.commit() 
-    create_table = "CREATE TABLE IF NOT EXISTS post(\
-        id INTEGER PRIMARY KEY, title text, content text, blog INTEGER, \
-        FOREIGN KEY (blog) REFERENCES blog(id))"
-    cursor.execute(create_table)
-    connection.commit() 
-    connection.close()
+    for key, blog in blogs.items(): 
+        print(f"{blog}")
 
 def start(): 
-    create_tables()
     menu() 
 
 if __name__ == "__main__":
