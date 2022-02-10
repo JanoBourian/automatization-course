@@ -1,2 +1,4 @@
 teclado_test/
 .idea/
+*.db
+*.db-journal
