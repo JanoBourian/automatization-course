@@ -37,6 +37,15 @@ def step_content(tag, content):
 
 def step_locations():
     browser = webdriver.Chrome(ChromeDriverManager().install())
+    browser.get('http://127.0.0.1:8000/')
+    link = browser.find_element_by_id('blog-link')
+    link.click()
+    expected_url = 'http://127.0.0.1:8000/blog'
+    assert browser.current_url == expected_url, f"It doesn't stay in the correct url, stay in {browser.current_url}"
+    link = browser.find_element_by_id('add-post-link')
+    link.click()
+    expected_url = 'http://127.0.0.1:8000/post'
+    assert browser.current_url == expected_url, f"It doesn't stay in the correct url, stay in {browser.current_url}"
     browser.get('http://127.0.0.1:8000/post')
     browser.get('http://127.0.0.1:8000/blog')
     browser.get('http://127.0.0.1:8000/')
